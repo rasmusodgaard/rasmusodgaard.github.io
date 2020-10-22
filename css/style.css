@@ -4,8 +4,8 @@
 }
 
 .card .card-title {
-  font-weight: 200 !important;
-  display: inline-flex !important;
+  font-size: 40px !important;
+  font-weight: 100 !important;
 }
 
 .card .bg {
@@ -31,7 +31,9 @@ h5 {
 }
 
 .capitalize {
-  text-transform: capitalize !important;
+  text-transform: uppercase !important;
+  font-size: 25px !important;
+  font-style: italic;
 }
 
 p {
