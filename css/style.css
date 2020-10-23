@@ -36,6 +36,10 @@ h5 {
   font-style: italic;
 }
 
+.text-img {
+  padding-top: 30px !important;
+}
+
 p {
   font-size: 15px !important;
 }
