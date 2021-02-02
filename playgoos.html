@@ -1,9 +1,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <title>Rasmus.Games</title>
 
+    <!-- UnityLoader -->
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate(
+        "gameContainer",
+        "Build/Default 251021.json",
+        {
+          onProgress: UnityProgress,
+          Module: {
+            preInit: [
+              function () {
+                this.gameInstance.Module.noInitialRun = true;
+              },
+            ],
+            onRuntimeInitialized: function () {
+              const btn = document.createElement("button");
+              btn.classList.add("playButton");
+              btn.textContent = "Play";
+              btn.style.fontSize = "2em";
+              btn.style.fontFamily = "Arial Black,sans-serif";
+
+              btn.onclick = (e) => {
+                gameInstance.Module.callMain();
+                btn.remove();
+              };
+              this.gameInstance.container.appendChild(btn);
+            },
+          },
+        }
+      );
+    </script>
     <!--LINKING-->
 
     <!-- Compiled and minified CSS -->
@@ -48,13 +84,19 @@
       <li><a href="about.html">About Me</a></li>
     </ul>
 
-    <div class="row container">
+    <!-- <div class="row container"> -->
 
       <div>
-        <div class="col s12 l8 text-img">
+        <!-- <div class="col s12 l8 text-img"> -->
+          <div class="webgl-content">
+            <div id="gameContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+              <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+              <div class="title">GoOS_2.0</div>
+            </div>
+          </div>
 
-
-            <iframe
+            <!-- <iframe
               src="https://i.simmer.io/@Skiltet/~78d90d11-b56a-a1b5-8eb6-5f32422e026b"
               style="
                 position: fixed;
@@ -71,10 +113,10 @@
               "
             >
               Your browser doesn't support iframes
-            </iframe>
+            </iframe> -->
 
 
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
   </body>
 </html>
