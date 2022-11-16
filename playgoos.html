@@ -1,85 +1,75 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Rasmus.Games</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--LINKING-->
+  <title>Rasmus.Games</title>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+  <!--LINKING-->
 
-    <!-- Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/fd54662810.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/fd54662810.js" crossorigin="anonymous"></script>
 
-    <!--UnityLoader-->
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <link rel="stylesheet" href="TemplateData/style.css" />
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <script>
-      var unityInstance = UnityLoader.instantiate(
-        "unityContainer",
-        "Build/Default 260221.json",
-        { onProgress: UnityProgress }
-      );
-    </script>
+  <!--UnityLoader-->
+  <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+  <link rel="stylesheet" href="TemplateData/style.css" />
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/index.js"></script>
-  </head>
+  <script>
+    var unityInstance = UnityLoader.instantiate(
+      "unityContainer",
+      "Build/goos2.0/Default 260221.json",
+      { onProgress: UnityProgress }
+    );
+  </script>
 
-  <body>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper white">
-          <a href="index.html" class="brand-logo center">
-            <span class="logo black-text flow-text">Rasmus Odgaard</span>
-          </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-            <i class="material-icons black-text">menu</i>
-          </a>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
 
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html" class="list-item">Portfolio</a></li>
-            <li><a href="about.html" class="list-item">About Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="index.html" class="brand-logo center">
+          <span class="logo black-text flow-text">Rasmus Odgaard</span>
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons black-text">menu</i>
+        </a>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Portfolio</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html" class="list-item">Portfolio</a></li>
+          <li><a href="about.html" class="list-item">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    <div>
-      <div class="webgl-content">
-        <div id="unityContainer" style="width: 705px; height: 450px"></div>
-        <div class="footer">
-          <div
-            class="fullscreen"
-            onclick="unityInstance.SetFullscreen(1)"
-          ></div>
-          <div class="title"></div>
-        </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul>
+
+  <div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 705px; height: 450px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title"></div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
