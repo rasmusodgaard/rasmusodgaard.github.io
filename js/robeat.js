@@ -40,6 +40,7 @@ var hilo = ["hi", "low"];
 var hilospeak = "Che ki di check. So do you want it hi or lo?";
 
 var beatboxer = ["clean", "hard", "wack", "crazy", "cool"];
+var beatboxer_data = ["id-ID", "pl-PL", "ru-RU", "ja-JP", "zh-HK"];
 var bbImg = ["images/clean.gif", "images/hard.gif", "images/wack.gif", "images/crazy.gif", "images/cool.gif"];
 
 var beatboxerspeak = "Now it's time to choose a beatboxer. All of them are up for some dope ass hiphop. What style are you into? Clean, hard, wack, crazy or cool?";
@@ -51,12 +52,11 @@ var pattern_data = [
     "boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti boom boom clap ti boom ti clap ti",
     "boom ti clap ti boom boom clap ti boom ti clap clap boom ti clap ti boom ti clap ti boom boom clap ti boom ti clap clap boom ti clap ti boom ti clap ti boom boom clap ti boom ti clap clap boom ti clap ti boom ti clap ti boom boom clap ti boom ti clap clap boom ti clap ti"];
 
-var tempo_data = [2, 1];
+var tempo_data = [1.5, 1.2];
 
-var hilo_data = [1.5, 0.5];
+var hilo_data = [1.5, 0.6];
 
 // var beatboxer_data = ["Daniel", "Xander", "Sara", "Ting-Ting", "Diego"];
-var beatboxer_data = ["en-GB", "nl-NL", "fr-FR", "zh-CN", "es-ES"];
 
 var settings = [-1, -1, -1, -1];
 
