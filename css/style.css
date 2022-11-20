@@ -9,7 +9,6 @@
 }
 
 .card .bg {
-  /* background-color: rgba(0, 0, 0, 0.5) !important; */
   width: fit-content !important;
   height: fit-content !important;
 }
@@ -58,4 +57,8 @@ p {
   max-width: 100%;
   height: width / 1.8 !important;
   object-fit: auto !important;
+}
+
+#playground-element {
+  margin-bottom: 40px !important;
 }
